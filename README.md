@@ -68,7 +68,7 @@ During the Exploratory Data Analysis (EDA), I began by importing the dataset and
 - *Removing Incomplete Rows:* Removed rows with missing values in critical columns like 'default' and 'contact' using dropna().
 - *Imputing Missing Values:* Filled missing values in the 'age' column with the median age using fillna().
 
-No Null Value was present in the dataset.
+**No Null Value was present in the dataset.
 
 | age | job | marital | education | default | housing | loan | contact | month | day_of_week | duration | campaign | pdays | previous | poutcome | emp.var.rate | cons.price.idx | cons.conf.idx | euribor3m | nr.employed | ModelPrediction | y |
 |-----|-----|---------|-----------|---------|---------|------|---------|-------|-------------|----------|----------|-------|----------|----------|--------------|----------------|---------------|-----------|-------------|-----------------|---|
