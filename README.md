@@ -1,4 +1,5 @@
-Image
+![Company Logo](https://github.com/dk-5599/Rocket-Mortgage--Bank-Case-Study/blob/main/Images/rocket_mortgage_Logo.png)
+
 # Rocket-Mortgage-Bank-Case-Study
 
 ## Project Overview
