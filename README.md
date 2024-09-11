@@ -7,7 +7,7 @@ In this project, I conducted data cleaning and understanding through Exploratory
 
 ### Index of Tasks
 
-1. [Data Set Information](https://github.com/dk-5599/Rocket-Mortgage--Bank-Case-Study/edit/main/README.md#data-set-information)
+1. Data Set Information
 2. Data Cleaning and Understanding
 3. Mock Dashboard Creation
 4. Model Development
