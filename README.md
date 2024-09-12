@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-In this project, I conducted data cleaning and understanding through Exploratory Data Analysis (EDA). I created four mock dashboards based on the insights generated from Python visualizations to effectively present key findings. I applied a Logistic Regression model to predict future customer subscriptions and assessed its performance using confusion matrices and classification reports. Based on the insights, I developed a recommendations and established a 6-week execution timeline for implementation.
+In this project, I conducted data cleaning and understanding through Exploratory Data Analysis (EDA). I created 4 mock dashboards based on the insights generated from Python visualizations to effectively present key findings. I applied a Logistic Regression model to predict future customer subscriptions and assessed its performance using confusion matrices and classification reports. Based on the insights, I developed a recommendations and established a 6-week execution timeline for implementation. I have also attahced the Python Notebook for each section at the end of each section.
 
 ### Index of Tasks
 
