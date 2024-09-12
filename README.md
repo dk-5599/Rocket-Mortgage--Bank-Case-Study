@@ -10,7 +10,7 @@ In this project, I conducted data cleaning and understanding through Exploratory
 
 1. Data Set Information
 2. Data Cleaning and Understanding
-3. Mock Dashboard Creation
+3. Mock Dashboard Creation & Project Insights
 4. Model Development
 5. Recommendations
 6. Execution Timeline
@@ -64,9 +64,9 @@ During the Exploratory Data Analysis (EDA), I began by importing the dataset and
 
 ### Handling Missing Data
 
-- *Identifying Missing Values:* Checked for missing values using isnull().sum().
-- *Removing Incomplete Rows:* Removed rows with missing values in critical columns like 'default' and 'contact' using dropna().
-- *Imputing Missing Values:* Filled missing values in the 'age' column with the median age using fillna().
+- **Identifying Missing Values:** Checked for missing values using isnull().sum().
+- **Removing Incomplete Rows:** Removed rows with missing values in critical columns like 'default' and 'contact' using dropna().
+- **Imputing Missing Values:** Filled missing values in the 'age' column with the median age using fillna().
 
 **No Null Value was present in the dataset.
 
@@ -79,7 +79,7 @@ This data cleaning process prepared the dataset for further analysis.
 [Python Code](Scripts/EDA.ipynb)
 
 ---
-## Dashboard Overview and Insights
+## Mock Dashboard Overview and Insights
 
 ## Dashboard 1: Subscription Overview and Demographics
 
@@ -87,29 +87,29 @@ This data cleaning process prepared the dataset for further analysis.
 
 **Objective:** Provide a high-level view of subscription rates, demographic factors, and educational background. This dashboard explores the overall subscription landscape, highlighting the rarity of subscribers compared to non-subscribers. It also delves into the educational and job-related aspects of subscribers, offering insights into which educational backgrounds and job categories are most likely to lead to a subscription.
 
-### Pie Chart: Total Number of Subscribers vs Non-Subscribers
+**1. Pie Chart: Total Number of Subscribers vs Non-Subscribers**
 
-**Insight:** Only 4.8% are subscribers, with the majority being non-subscribers.
+- **Insight:** Only 4.8% are subscribers, with the majority being non-subscribers.
 
-**Position:**  Top-Right
+- **Dashboard Position:**  Top-Right
 
-### Stacked Bar Chart: Term Deposit Subscription by Education (Excluding Illiterate)
+**2. Stacked Bar Chart: Term Deposit Subscription by Education (Excluding Illiterate)**
 
-**Insight:** University degree holders have the highest subscription rate, while those with basic 6y education have the lowest.
+- **Insight:** University degree holders have the highest subscription rate, while those with basic 6y education have the lowest.
 
-**Position:**  Bottom-Left
+- **Dashboard Position:**  Bottom-Left
 
-### Box Plot: Age by Education Level and Subscription Status (Excluding Illiterate)
+**3. Box Plot: Age by Education Level and Subscription Status (Excluding Illiterate)**
 
-**Insight:** People with basic 4y education have the highest average subscription age, whereas university degree holders have the lowest.
+- **Insight:** People with basic 4y education have the highest average subscription age, whereas university degree holders have the lowest.
 
-**Position:**  Top-Left
+- **Dashboard Position:**  Top-Left
 
-### Pie Chart: Distribution of Subscribers by Job Category
+**4. Pie Chart: Distribution of Subscribers by Job Category**
 
-**Insight:** Admin jobs account for 24.8% of all subscribers, while students have the lowest at 1.3%.
+- **Insight:** Admin jobs account for 24.8% of all subscribers, while students have the lowest at 1.3%.
 
-**Position:**  Bottom-Right
+- **Dashboard Position:**  Bottom-Right
 
 [Python Code](Scripts/Dashboard1.ipynb)
 
@@ -119,23 +119,23 @@ This data cleaning process prepared the dataset for further analysis.
 
 **Objective:** Analyze the effectiveness of different contact strategies and how contact mode impacts subscription rates. This dashboard examines how different contact methods (cellular vs. telephone) and the duration of these contacts affect subscription rates. It also compares how the average duration of contact varies between subscribers and non-subscribers, providing insights into the optimal contact strategy for maximizing subscriptions.
 
-### Stacked Bar Chart: Term Deposit Subscription by Contact Type & Contact Duration Histogram by Contact Mode for Age Group
+**1. Stacked Bar Chart: Term Deposit Subscription by Contact Type & Contact Duration Histogram by Contact Mode for Age Group**
 
-**Insight:** Contact type (cellular vs telephone) shows similar subscription ratios, and contact duration shows consistency across age groups.
+- **Insight:** Contact type (cellular vs telephone) shows similar subscription ratios, and contact duration shows consistency across age groups.
 
-**Position:**  Right
+- **Dashboard Position:**  Right
 
-### Stacked Bar Chart: Average Duration (in Minutes) vs Age for Subscribers & Average Duration (in Minutes) vs Age for Non-Subscribers
+**2. Stacked Bar Chart: Average Duration (in Minutes) vs Age for Subscribers & Average Duration (in Minutes) vs Age for Non-Subscribers**
 
-**Insight:** Subscribers have a higher average call duration (14.35 minutes) compared to non-subscribers (3.7 minutes).
+- **Insight:** Subscribers have a higher average call duration (14.35 minutes) compared to non-subscribers (3.7 minutes).
 
-**Position:** Bottom-Left
+- **Dashboard Position:** Bottom-Left
 
-### Stacked Bar Chart: Term Deposit Subscription by Contact Type
+**3. Stacked Bar Chart: Term Deposit Subscription by Contact Type**
 
-**Insight:** Both cellular and telephone contact types are used, showing their effectiveness in acquiring subscribers.
+- **Insight:** Both cellular and telephone contact types are used, showing their effectiveness in acquiring subscribers.
 
-**Position:**  Top-Left
+- **Dashboard Position:**  Top-Left
 
 [Python Code](Scripts/Dashboard2.ipynb)
 
@@ -145,29 +145,29 @@ This data cleaning process prepared the dataset for further analysis.
 
 **Objective:** Explore how subscription rates vary by time and financial factors. This dashboard investigates how subscription rates are influenced by different months, days of the week, and marital status. It also examines how financial factors such as loan status impact subscription rates, providing insights into the temporal and financial dynamics of subscription behaviors.
 
-### Stacked Bar Chart: Term Deposit Subscription by Month
+**1. Stacked Bar Chart: Term Deposit Subscription by Month**
 
-**Insight:** May has the highest number of customers contacted, while July has the highest conversion ratio.
+- **Insight:** May has the highest number of customers contacted, while July has the highest conversion ratio.
 
-**Position:**  Bottom-Left
+- **Dashboard Position:**  Bottom-Left
 
-### Stacked Bar Chart: Term Deposit Subscription by Day of Week
+**2. Stacked Bar Chart: Term Deposit Subscription by Day of Week**
 
-**Insight:**  Subscription rates show minimal variance across different days of the week.
+- **Insight:**  Subscription rates show minimal variance across different days of the week.
 
-**Position:**  Top-Left
+- **Dashboard Position:**  Top-Left
 
-### Stacked Bar Chart: Term Deposit Subscription by Marital Status
+**3. Stacked Bar Chart: Term Deposit Subscription by Marital Status**
 
-**Insight:** Married individuals have the highest subscription rate, whereas divorced individuals have the lowest.
+- **Insight:** Married individuals have the highest subscription rate, whereas divorced individuals have the lowest.
 
-**Position:**  Top-Right
+- **Dashboard Position:**  Top-Right
 
-### Stacked Bar Chart: Subscribers by Housing Loan, Personal Loan, and Default Status
+**4. Stacked Bar Chart: Subscribers by Housing Loan, Personal Loan, and Default Status**
 
-**Insight:** Subscribers with housing loans are most prevalent, with no subscribers having credit defaults.
+- **Insight:** Subscribers with housing loans are most prevalent, with no subscribers having credit defaults.
 
-**Position:** Bottom-Right
+- **Dashboard Position:** Bottom-Right
 
 [Python Code](Scripts/Dashboard3.ipynb)
 
@@ -177,17 +177,17 @@ This data cleaning process prepared the dataset for further analysis.
 
 **Objective:** Evaluate how economic indicators and campaign strategies affect subscription rates. This dashboard focuses on how economic factors like Euribor rates and campaign strategies influence subscription rates. It provides insights into which economic conditions and campaign efforts are most effective in driving subscriptions.
 
-### Line Plot: Subscribers by Euribor 3 Months
+**1. Line Plot: Subscribers by Euribor 3 Months**
 
-**Insight:** A Euribor rate of 4.857 has the highest spike in subscriptions, while rates between 4.2 and 4.8 show lower subscription rates.
+- **Insight:** A Euribor rate of 4.857 has the highest spike in subscriptions, while rates between 4.2 and 4.8 show lower subscription rates.
 
-**Position:**  Right
+- **Dashboard Position:**  Right
 
-### Area Chart: Subscribers by Number of Campaigns & Non-Subscribers by Number of Campaigns
+**2. Area Chart: Subscribers by Number of Campaigns & Non-Subscribers by Number of Campaigns**
 
-**Insight:** Both subscribers and non-subscribers have an average of 4 contact points, but non-subscribers decline in subscription rates faster after 4 contacts.
+- **Insight:** Both subscribers and non-subscribers have an average of 4 contact points, but non-subscribers decline in subscription rates faster after 4 contacts.
 
-**Position:**  Left
+- **Dashboard Position:**  Left
 
 [Python Code](Scripts/Dashboard4.ipynb)
 
@@ -237,14 +237,14 @@ In this section, I implemented a logistic regression model to predict subscripti
 | **weighted avg** | 0.95   | 0.96   | 0.95     | 8156    |
 
 
-- *Prediction on Sample Data:* Made predictions on a few random samples from the test set to demonstrate the model's capability.
+- **Prediction on Sample Data:** Made predictions on a few random samples from the test set to demonstrate the model's capability.
 
 | Attribute       | age | job       | marital | education | default | housing | loan | contact   | month | day_of_week | duration | campaign | pdays | previous | poutcome | emp.var.rate | cons.price.idx | cons.conf.idx | euribor3m | nr.employed | ModelPrediction | Name  |
 |-----------------|-----|-----------|---------|-----------|---------|---------|------|-----------|-------|-------------|----------|----------|-------|----------|----------|--------------|----------------|---------------|-----------|--------------|-----------------|-------|
 | Value           | 37  | management| married | high.school| no      | yes     | no   | telephone | nov   | mon         | 3.133333 | 2        | 999   | 1        | failure  | -0.1         | 93.2           | -42.0         | 4.191     | 5195.8       | 0.955695        | 24673 |
 
 
-Model predicted : Non-Subscriber
+**Model predicted:** Non-Subscriber
 
 [Python Code](Scripts/ML_Model.ipynb)
 
